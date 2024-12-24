@@ -1,0 +1,14 @@
+name: test
+
+on: workflow_dispatch
+
+jobs:
+  build_first:
+    runs_on: ubuntu-latest
+    steps:
+      - name: first show
+        run: pwd
+      - name: git clone
+        run: git clone https://github.com/Yue-korita/CICD.git
+      - name: ls show
+        run: ls -la
